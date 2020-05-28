@@ -11,7 +11,7 @@ enum AppConfiguration {
 
 struct Config {
   // This is private because the use of 'appConfiguration' is preferred.
-  private static let isTestFlight = NSBundle.mainBundle().appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
+  private static let isTestFlight = Bundle.mainBundle().appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
 
   // This can be used to add debug statements.
   static var isDebug: Bool {
