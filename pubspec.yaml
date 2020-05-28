@@ -1,0 +1,26 @@
+name: detect_testflight
+description: Detect if the Flutter app is running from TestFlight at runtime
+version: 1.0.0
+author: declanwoods
+homepage: declan.sh
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: sh.declan.detect_testflight
+        pluginClass: DetectTestflightPlugin
+      ios:
+        pluginClass: DetectTestflightPlugin
