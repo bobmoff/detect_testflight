@@ -23,3 +23,6 @@ flutter:
         pluginClass: DetectTestflightPlugin
       ios:
         pluginClass: DetectTestflightPlugin
+      web:
+        pluginClass: DetectTestflightPlugin
+        fileName: detect_testflight.dart
