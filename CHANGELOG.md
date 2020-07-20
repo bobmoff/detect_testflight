@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Enable web support
+
 ## 1.0.2
 
 * Document internals and fix example app

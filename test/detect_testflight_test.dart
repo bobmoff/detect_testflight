@@ -9,7 +9,7 @@ void main() {
 
   setUp(() {
     channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
+      return false;
     });
   });
 
@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await DetectTestflight.platformVersion, '42');
+    expect(await DetectTestflight.isTestflight, false);
   });
 }
