@@ -1,3 +1,7 @@
+## 2.0.0
+
+* Null-safety (thanks @maximilianschelbach)
+
 ## 1.0.3
 
 * Enable web support
