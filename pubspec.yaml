@@ -1,6 +1,6 @@
 name: detect_testflight
 description: Detect if the Flutter app is running from TestFlight at runtime
-version: 1.0.3
+version: 1.0.4
 homepage: https://declan.sh
 
 environment:
