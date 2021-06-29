@@ -5,7 +5,7 @@ import 'dart:io';
 class DetectTestflight {
   /// Store the value of whether the app is in TestFlight, as this does not
   /// change in the same app run
-  static bool _isTestflightCache;
+  static bool? _isTestflightCache;
 
   /// Channel to communicate with native code
   static const MethodChannel _channel =
@@ -24,10 +24,7 @@ class DetectTestflight {
 
   /// Query whether the app is running from a Testflight build
   static Future<bool> get isTestflight async {
-    if (_isTestflightCache == null) {
-      _isTestflightCache = await _checkTestflight();
-    }
-
-    return _isTestflightCache;
+    _isTestflightCache ??= await _checkTestflight();
+    return _isTestflightCache!;
   }
 }
